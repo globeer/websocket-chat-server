@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class ChatService {
 
     private final ChannelTopic channelTopic;
-    private final RedisTemplate redisTemplate;
+    private final RedisTemplate<String, ChatMessage> redisTemplate;
     private final ChatRoomRepository chatRoomRepository;
 
     /**
